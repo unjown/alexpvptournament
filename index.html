@@ -1,8 +1,62 @@
 <html>
 <head>
-
+    <title>ALEX PVP TOURNAMENT</title>
+    <link rel="icon" href="logo.png" type="image/png">
+    <link rel="stylesheet" href="index.css">
+    <script>
+        function myFunction() {
+            var input, filter, ul, li, a, i, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myUL");
+            li = ul.getElementsByTagName("li");
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                txtValue = a.textContent || a.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+        </script>
  <head>
 <body>
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+    <ul id="myUL">
+      <li><a href="brackets/Round1-6.html">Alex blue</a></li>
+      <li><a href="brackets/Round1-4.html">Arif Daniel</a></li>
+    
+      <li><a href="brackets/Round1-3.html">AustinMatt</a></li>
+      <li><a href="brackets/round1-2.html">Bambuko</a></li>
+      <li><a href="brackets/round1-1.html">Bruhder</a></li>
+      <li><a href="brackets/Round1-7.html">Dabanana gaming</a></li>
+      <li><a href="brackets/Round1-4.html">Dot</a></li>
+      <li><a href="brackets/round1-2.html">Electric PW</a></li>
+      <li><a href="brackets/Round1-3.html">fredplaysmindustry</a></li>
+      <li><a href="brackets/round1-1.html">hit</a></li>
+      <li><a href="brackets/round1-1.html">imbatman</a></li>
+      <li><a href="brackets/Round1-6.html">Jason furious</a></li>
+      <li><a href="brackets/Round1-5.html">jeff</a></li>
+      <li><a href="brackets/Round1-5.html">melon</a></li>
+      <li><a href="brackets/Round1-5.html">PogMaster</a></li>
+      <li><a href="brackets/Round1-6.html">piepow</a></li>
+      <li><a href="brackets/Round1-7.html">puro</a></li>
+      <li><a href="#">TCN</a></li>
+      <li><a href="brackets/Round1-4.html">twinflame</a></li>
 
- </body>
+      <li><a href="brackets/Round1-7.html">UWU rainbows</a></li>
+      <li><a href="brackets/Round1-7.html">Ø₲ k̸̙͌in̶̎g ♤</a></li>
+      <li><a href="brackets/Round1-6.html">KK</a></li>
+      <li><a href="brackets/round1-1.html">cheezze</a></li>
+      <li><a href="brackets/Round1-3.html">Tree</a></li>
+      <li><a href="brackets/Round1-3.html">Senate</a></li>
+      <li><a href="brackets/round1-2.html">Xelo</a></li>
+      <li><a href="brackets/Round1-4.html">Zhenьkotron</a></li>
+      <li><a href="brackets/round1-2.html">Zacky</a></li>
+      <li><a href="#">Unjown</a></li>
+      <li><a href="brackets/Round1-5.html">Alex Unique modifier</a></li>
+    </ul>
+</body>
 </html>
